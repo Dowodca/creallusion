@@ -1,0 +1,404 @@
+body{margin:0px;
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;}
+
+#bgvideo{position: fixed;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:-1000;
+    opacity: 0.6;}
+
+/* Barre du haut */
+
+#firstblock{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100vw;}
+
+#menu{display:flex;
+    flex-direction:row;
+    gap: 20px;
+    color:white;}
+
+#menu p:hover{text-shadow: 0px 0px 5px white;}
+
+#title{display:flex;
+    flex-direction: row;
+    align-items: center;}
+
+h1 {color: white;}
+
+#creallusion{height: 50px;}
+
+#login{color: white;}
+
+#login:hover{text-shadow: 0px 0px 5px white;}
+
+/* Explications des métiers */
+
+#webdevcontenant{width: 90vw;
+                height: auto;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid pink;}
+
+#webdevjunction{width: 90%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+                border: 1px solid pink;}
+
+#webdevcontenant1{padding: 5px;
+        border: 1px solid pink;}
+
+#webdevcontenant1 p{color: white;
+                    font-size: 19px;
+                    line-height: 1.5;}
+
+#computer{width: 400px;
+        padding: 5px;
+        border-radius: 15px;
+        border: 1px solid pink;}
+
+#identitevisuellecontenant{width: 90vw;
+                        height: auto;
+                        padding: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        border: 1px solid pink;}
+
+#identitevisuellecontenant p{color: white;
+                            font-size: 19px;
+                            line-height: 1.5;}
+
+#identitevisuelle{width: 90%;}
+
+#reseauxcontenant{width: 90vw;
+                    height: auto;
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    border: 1px solid pink;}
+
+#reseauxcontenant p{color:white;
+                    font-size: 19px;
+                    line-height: 1.5;}
+
+#reseauxjunction{display:flex;
+                align-items: center;
+                justify-content: space-between;}
+
+#slidercontenant{width:250px;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                border: 1px solid pink;}
+
+#sliderimages{display: flex;
+            flex-direction: column;
+            text-align: center;
+            animation: slide 10s infinite linear;}
+
+.imagesfromslider{width:150px;
+                margin: 5px 0px;
+                border: 1px solid purple;}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-600px); /* Adjust this value based on the total height of your images */
+    }
+}
+
+#reseauxdescription{width:90%;
+                    padding: 5px;}
+
+#montagecontenant{width: 90vw;
+                height: auto;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid pink;}
+
+#montagecontenant p{color: white;
+                    font-size: 19px;
+                    line-height: 1.5;}
+
+#montagedescription{width: 90%;}
+
+/* Affichage du nom pour une création de compte avec succes */
+
+.creation_success{color: white;}
+
+/* Affichage du nom pour une connection avec succes */
+
+.wellconnected {padding: 0px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 253, 8, 0.25);
+    color: rgba(255, 255, 255, 0.75);}
+
+/* Se connecter pour laisser des commentaires */
+
+#commentaires{border: 1px solid red;
+    height: 100px;
+    color:white;
+    margin-bottom: 30px;
+    text-align: center;}
+
+
+/* Saisir un commentaire */
+
+#notationform{display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+#mytextarea{height: 250px;
+    width: 450px;
+    padding: 10px;
+    resize: none;
+    color:white;
+    background: rgba(0, 0, 0, 0);}
+
+#charCount{padding: 0px 10px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;}
+
+#note{display:inline-block;}
+
+#notation{display: inline-block;
+    width: auto;}
+
+/* Commentaire laissé avec succès */
+
+.messagelaisse{color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(0, 253, 8, 0.25);
+    width: 450px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 10px;}
+
+.notationremplir{color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 450px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 10px;}
+
+/* Affichage des commentaires de la BDD */
+
+.espacecommentaires{display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 150px;
+    width: 535px;
+    overflow: hidden;
+    border:1px solid green;
+    display: flex;
+    flex-direction: row;}
+
+.comments{color:white;
+    line-height: 1.5;
+    border: 1px solid orange;}
+
+.stars{color: cyan;
+    font-size: 24px;}
+
+/* Bannière des partenaires */
+
+#partenaires {display: flex;
+    margin: 50px 0px;
+    justify-content: space-between;
+    width: 100vw;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+.partenaires-images {
+    white-space: nowrap;
+    display: inline-block;
+    animation: 40s slide infinite linear; 
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); } 
+}
+
+/* Mes réseaux */
+
+#contenant {border: 1px solid purple;
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;}
+
+#contenant p {color: white;
+    text-align: center;}
+
+.chaines {border: 1px solid orange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 900px;}
+
+.imageschaines{width: 200px;
+    border-radius: 50%;}
+
+#liensreseaux{display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 900px;
+    border: 1px solid pink;}
+
+.sousliensreseaux{text-align: center;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    border: 1px solid yellow;}
+
+.sousliensreseaux p {display: inline-block;}
+
+.imagesreseaux{width: 20px;}
+
+/* Formulaire de contact */
+
+.formcontainer{width: 500px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0);
+    padding: 20px 50px;}
+
+#formulaire {margin: auto;
+    display: flex;
+    flex-direction: column;}
+
+label {text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 5px;
+    color: white;}
+
+input {border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0, 0);}
+
+textarea {resize: none;
+    width: 500px;
+    height: 100px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(0, 0, 0, 0);}
+
+#counter{text-align: center;
+    color:white;}
+
+.error{background-color: rgba(253, 0, 0, 0.25);
+    color:red;
+    text-align: center;
+    border-radius: 5px;}
+
+.succes{background-color: rgba(0, 253, 8, 0.25);
+    color:green;
+    text-align: center;
+    border-radius: 5px;}
+
+button {width: 200px;
+    border-radius: 5px;
+    margin:auto;}
+
+
+footer {border-top: 1px solid white;
+    margin-top: 50px;
+    width: 100vw;
+    text-align: center;}
+
+footer p{color: white;}
+
+
+@media all and (max-width: 450px) {
+
+body{margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;}    
+
+h3{margin:0px;}
+
+#touslesmetiers{width: 370px;
+    height: 1250px;
+    margin:0px 20px 0px 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;}
+
+.descriptionmetier{font-size: 12px;}
+
+.cliquez{font-size: 12px;}
+
+.card{height: 350px;
+    width: 350px;
+    perspective: 1000px;}
+
+#graphics, #editing, #development {width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top:5%;}
+
+.pepsi{width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top:5%;}
+
+.formcontainer{border-radius: 15px;
+    box-shadow: 0px 0px 25px 5px grey;
+    background-color: whitesmoke;
+    width: 350px;
+    margin: 10px 20px 20px 20px;
+    padding: 25px 0px 10px 0px;}
+
+form {width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;}
+
+textarea {resize: none;
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;}
+
+}

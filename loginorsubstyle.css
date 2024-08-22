@@ -1,0 +1,70 @@
+body {height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;}
+
+#bgvideo{position: fixed;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:-1000;
+    opacity: 0.6;}
+
+.container{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 1200px;}
+
+#potentialerrors{height: 200px;
+    width: 1100px; }
+
+.logindiv, .subscribediv{height: 450px;
+    width: 450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 1px solid white;
+    color: white;}   
+
+.logindiv p, .subscribediv p {text-align: center;
+    font-size: 25px;}
+    
+.logindiv1, .logindivemail, .logindiv2, .loginbutton, .subdiv1, .subdivemail, .subdiv2, .subscribebutton {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    border: 1px solid orange;}
+
+label{margin-bottom: 10px;}
+
+input{background-color: rgba(0,0,0,0);
+    border: 1px solid white;
+    color: white;
+    text-align: center;} 
+
+.suberrors{width: 1000px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: black;}
+
+.form_errors{width: 1000px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: black;}
+
+a{text-decoration: none;
+    color:white;}
+
